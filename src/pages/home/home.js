@@ -1,12 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import Banner from "../../components/banner/banner";
 
 function Home() {
   return (
-    <Container>
-      <div>Home</div>
-    </Container>
-  );
+   
+      <div class="home-wrap">
+        <Banner />
+      </div>
+  )
 }
 
 export default Home;

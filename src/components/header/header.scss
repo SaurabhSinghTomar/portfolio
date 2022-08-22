@@ -1,0 +1,34 @@
+@import "../../assets//scss/mixin";
+.App-header {
+  .navbar-collapse {
+    justify-content: end;
+  }
+  .nav-wrap {
+    .nav-sub {
+      white-space: nowrap;
+      cursor: pointer;
+      &:hover{
+        transition: all ease-in-out 500ms;
+        background: #203b46b8;
+        color: #fff;
+      }
+    }
+  }
+  .navbar-brand {
+    margin-left: -20px;
+  }
+  .navbar-toggler {
+    position: relative;
+    border: none;
+  }
+
+ 
+}
+
+@include devices(mobile) {
+  .nav-wrap {
+    .nav-sub {
+      flex: auto;
+    }
+  }
+}

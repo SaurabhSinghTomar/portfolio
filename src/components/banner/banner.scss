@@ -1,0 +1,20 @@
+@import "../../assets/scss//mixin";
+.banner-wrap {
+  background: url(../../assets/images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 140px;
+  text-align: center;
+  min-height: 800px;
+  .fade{
+    &.in{
+        opacity: 1;
+        transition: all ease cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+  }
+  .rotate{
+    transition: all ease-in-out 1s;
+
+  }
+}
